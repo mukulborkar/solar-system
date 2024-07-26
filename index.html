@@ -16,7 +16,19 @@
     </header>
     <main>
       <div class="solar-system">
-        <img src="images/solar-system.jpg" />
+        <img src="images/solar-system.jpg" usemap="planetMap"/>
+        <map name="planetMap">
+          <area coords="891,439,395" href="#sun" alt="sun" shape="circle" onclick="navigateTo('sun')" >
+          <area coords="1694,485,93" href="#mercury" alt="Mercury" shape="circle" onclick="navigateTo('mercury')" >
+          <area coords="2295,484,177" href="#venus" alt="Venus" shape="circle" onclick="navigateTo('venus')" >
+          <area coords="2922,488,133" href="#earth" alt="Earth" shape="circle" onclick="navigateTo('earth')" >
+          <area coords="3464,488,161" href="#mars" alt="Mars" shape="circle" onclick="navigateTo('mars')" >
+          <area coords="4177,488,262" href="#jupiter" alt="Jupiter" shape="circle" onclick="navigateTo('jupiter')" >
+          <area coords="4964,513,262" href="#saturn" alt="Saturn" shape="circle" onclick="navigateTo('saturn')" >
+          <area coords="5683,463,197" href="#uranus" alt="Uranus" shape="circle" onclick="navigateTo('uranus')" >
+          <area coords="6310,477,168" href="#neptune" alt="Neptune" shape="circle" onclick="navigateTo('neptune')" >
+          <area coords="6904,478,126" href="#pluto" alt="pluto" shape="circle" onclick="navigateTo('pluto')" >
+      </map>
       </div>
       <div class="container">
         <div class="content">
@@ -81,7 +93,7 @@
           </p>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="sun">
         <div class="planet-heading scroll">
           <h1>The Sun</h1>
           <h3>The Heart of Our Solar System</h3>
@@ -135,7 +147,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="mercury">
         <div class="planet-heading"><h1>Mercury</h1></div>
         <div class="planet-image">
           <img src="images/mercury.png" alt="Mercury" />
@@ -244,7 +256,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="venus">
         <div class="planet-heading"><h1>Venus</h1></div>
         <div class="planet-image"><img src="images/venus.png" /></div>
         <div class="planet-content">
@@ -349,7 +361,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="earth">
         <div class="planet-heading"><h1>Earth</h1></div>
         <div class="planet-image"><img src="images/earth.png" /></div>
         <div class="planet-content">
@@ -461,7 +473,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="mars">
         <div class="planet-heading"><h1>Mars</h1></div>
         <div class="planet-image"><img src="images/mars.png" /></div>
         <div class="planet-content">
@@ -576,7 +588,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="jupiter">
         <div class="planet-heading"><h1>Jupiter</h1></div>
         <div class="planet-image"><img src="images/jupiter.png" /></div>
         <div class="planet-content">
@@ -709,7 +721,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="saturn">
         <div class="planet-heading"><h1>Saturn</h1></div>
         <div class="planet-image"><img src="images/saturn.png" /></div>
         <div class="planet-content">
@@ -833,7 +845,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="uranus">
         <div class="planet-heading"><h1>Uranus</h1></div>
         <div class="planet-image"><img src="images/uranus.png" /></div>
         <div class="planet-content">
@@ -953,7 +965,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="neptuene">
         <div class="planet-heading"><h1>Neptune</h1></div>
         <div class="planet-image"><img src="images/neptune.png" /></div>
         <div class="planet-content">
@@ -1068,7 +1080,7 @@
           </ul>
         </div>
       </div>
-      <div class="planet">
+      <div class="planet" id="pluto">
         <div class="planet-heading"><h1>Pluto</h1></div>
         <div class="planet-image"><img src="images/pluto.png" /></div>
         <div class="planet-content">
