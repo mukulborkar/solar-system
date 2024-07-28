@@ -31,5 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function navigateTo(planetId) {
         document.getElementById(planetId).scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('top').style.display = 'block';
     }
+
+    const topBtn = document.getElementById('top');
+
+    topBtn.addEventListener('click', (event) => {
+        document.getElementById('solarSystemImage').scrollIntoView({top:0, behavior: 'smooth' });
+        document.getElementById('top').style.display = 'none';
+    });
+ 
+    // function backToTop() {
+    //     document.getElementById('solarSystemImage').scrollIntoView({top:0, behavior: 'smooth' });
+    //     document.getElementById('top').style.display = 'none';
+    // }
 });
